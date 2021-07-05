@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_screen"
+    app:startDestination="@id/choiceFragment">
+
+    <fragment
+        android:id="@+id/choiceFragment"
+        android:name="com.kavramatik.kavramatik.view.ChoiceFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_choice">
+        <action
+            android:id="@+id/action_choiceFragment_to_educationCategories"
+            app:destination="@id/educationCategories"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left" />
+        <action
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            android:id="@+id/action_choiceFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_choiceFragment_to_oyunKategorileri"
+            app:destination="@id/oyunKategorileri"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/educationCategories"
+        android:name="com.kavramatik.kavramatik.view.EducationCategories"
+        android:label="@string/options"
+        tools:layout="@layout/fragment_education_categories">
+        <action
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            android:id="@+id/action_educationCategories_to_dimensionFragment"
+            app:destination="@id/dimensionFragment" />
+        <action
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            android:id="@+id/action_educationCategories_to_colorFragment"
+            app:destination="@id/colorFragment" />
+        <action
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            android:id="@+id/action_educationCategories_to_shapeFragment"
+            app:destination="@id/shapeFragment" />
+        <action
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            android:id="@+id/action_educationCategories_to_directionFragment"
+            app:destination="@id/directionFragment" />
+        <action
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            android:id="@+id/action_educationCategories_to_numberFragment"
+            app:destination="@id/numberFragment" />
+        <action
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            android:id="@+id/action_educationCategories_to_emotionFragment"
+            app:destination="@id/emotionFragment" />
+        <action
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            android:id="@+id/action_educationCategories_to_quantityFragment"
+            app:destination="@id/quantityFragment" />
+        <action
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            android:id="@+id/action_educationCategories_to_senseFragment"
+            app:destination="@id/senseFragment" />
+        <action
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            android:id="@+id/action_educationCategories_to_oppositesFragment"
+            app:destination="@id/oppositesFragment" />
+        <action
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            android:id="@+id/action_educationCategories_to_speechListFragment"
+            app:destination="@id/speechListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/oyunKategorileri"
+        android:name="com.kavramatik.kavramatik.view.OyunKategorileri"
+        android:label="@string/options"
+        tools:layout="@layout/fragment_oyun_kategorileri">
+        <action
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            android:id="@+id/action_oyunKategorileri_to_oyunlarRenk"
+            app:destination="@id/oyunlarRenk" />
+        <action
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            android:id="@+id/action_oyunKategorileri_to_oyunlarBoyut"
+            app:destination="@id/oyunlarBoyut" />
+        <action
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            android:id="@+id/action_oyunKategorileri_to_oyunlarDuygu"
+            app:destination="@id/oyunlarDuygu" />
+        <action
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            android:id="@+id/action_oyunKategorileri_to_oyunlarDuyu"
+            app:destination="@id/oyunlarDuyu" />
+        <action
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            android:id="@+id/action_oyunKategorileri_to_oyunlarMiktar"
+            app:destination="@id/oyunlarMiktar" />
+        <action
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            android:id="@+id/action_oyunKategorileri_to_oyunlarSayi"
+            app:destination="@id/oyunlarSayi" />
+        <action
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            android:id="@+id/action_oyunKategorileri_to_oyunlarSekil"
+            app:destination="@id/oyunlarSekil" />
+        <action
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            android:id="@+id/action_oyunKategorileri_to_oyunlarYon"
+            app:destination="@id/oyunlarYon" />
+        <action
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            android:id="@+id/action_oyunKategorileri_to_oyunlarZit"
+            app:destination="@id/oyunlarZit" />
+    </fragment>
+    <fragment
+        android:id="@+id/oyunlarRenk"
+        android:name="com.kavramatik.kavramatik.view.OyunlarRenk"
+        android:label="@string/colors"
+        tools:layout="@layout/fragment_oyunlar_renk">
+        <action
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            android:id="@+id/action_oyunlarRenk_to_renkOyunFragment"
+            app:destination="@id/renkOyunFragment" />
+        <action
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            android:id="@+id/action_oyunlarRenk_to_hafizaKartiRenk"
+            app:destination="@id/hafızaKartiRenk" />
+    </fragment>
+    <fragment
+        android:id="@+id/oyunlarBoyut"
+        android:name="com.kavramatik.kavramatik.view.OyunlarBoyut"
+        android:label="@string/dimensions"
+        tools:layout="@layout/fragment_oyunlar_boyut">
+        <action
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            android:id="@+id/action_oyunlarBoyut_to_boyutOyunFragment"
+            app:destination="@id/boyutOyunFragment" />
+        <action
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            android:id="@+id/action_oyunlarBoyut_to_hafizaKartiBoyut"
+            app:destination="@id/hafızaKartiBoyut" />
+    </fragment>
+    <fragment
+        android:id="@+id/oyunlarDuygu"
+        android:name="com.kavramatik.kavramatik.view.OyunlarDuygu"
+        android:label="@string/emotions"
+        tools:layout="@layout/fragment_oyunlar_duygu">
+        <action
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            android:id="@+id/action_oyunlarDuygu_to_duyguOyunFragment"
+            app:destination="@id/duyguOyunFragment" />
+        <action
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            android:id="@+id/action_oyunlarDuygu_to_hafizaKartiDuygu"
+            app:destination="@id/hafızaKartiDuygu" />
+    </fragment>
+    <fragment
+        android:id="@+id/oyunlarDuyu"
+        android:name="com.kavramatik.kavramatik.view.OyunlarDuyu"
+        android:label="@string/senses"
+        tools:layout="@layout/fragment_oyunlar_duyu">
+        <action
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            android:id="@+id/action_oyunlarDuyu_to_duyuOyunFragment"
+            app:destination="@id/duyuOyunFragment" />
+        <action
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            android:id="@+id/action_oyunlarDuyu_to_hafizaKartiDuyu"
+            app:destination="@id/hafızaKartiDuyu" />
+    </fragment>
+    <fragment
+        android:id="@+id/oyunlarMiktar"
+        android:name="com.kavramatik.kavramatik.view.OyunlarMiktar"
+        android:label="@string/quantities"
+        tools:layout="@layout/fragment_oyunlar_miktar">
+        <action
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            android:id="@+id/action_oyunlarMiktar_to_miktarOyunFragment"
+            app:destination="@id/miktarOyunFragment" />
+        <action
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            android:id="@+id/action_oyunlarMiktar_to_hafizaKartiMiktar"
+            app:destination="@id/hafızaKartiMiktar" />
+    </fragment>
+    <fragment
+        android:id="@+id/oyunlarSayi"
+        android:name="com.kavramatik.kavramatik.view.OyunlarSayi"
+        android:label="@string/numbers"
+        tools:layout="@layout/fragment_oyunlar_sayi">
+        <action
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            android:id="@+id/action_oyunlarSayi_to_sayiOyunFragment"
+            app:destination="@id/sayıOyunFragment" />
+        <action
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            android:id="@+id/action_oyunlarSayi_to_hafizaKartiSayi"
+            app:destination="@id/hafızaKartiSayi" />
+    </fragment>
+    <fragment
+        android:id="@+id/oyunlarSekil"
+        android:name="com.kavramatik.kavramatik.view.OyunlarŞekil"
+        android:label="@string/shapes"
+        tools:layout="@layout/fragment_oyunlar_sekil">
+        <action
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            android:id="@+id/action_oyunlarSekil_to_sekilOyunFragment"
+            app:destination="@id/şekilOyunFragment" />
+        <action
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            android:id="@+id/action_oyunlarSekil_to_hafizaKartiSekil"
+            app:destination="@id/hafızaKartiSekil" />
+    </fragment>
+    <fragment
+        android:id="@+id/oyunlarYon"
+        android:name="com.kavramatik.kavramatik.view.OyunlarYön"
+        android:label="@string/directions"
+        tools:layout="@layout/fragment_oyunlar_yon">
+        <action
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            android:id="@+id/action_oyunlarYon_to_yonOyunFragment"
+            app:destination="@id/yönOyunFragment" />
+        <action
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            android:id="@+id/action_oyunlarYon_to_hafizaKartiYon"
+            app:destination="@id/hafızaKartiYon" />
+    </fragment>
+    <fragment
+        android:id="@+id/oyunlarZit"
+        android:name="com.kavramatik.kavramatik.view.OyunlarZıt"
+        android:label="@string/opposites"
+        tools:layout="@layout/fragment_oyunlar_zit">
+        <action
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            android:id="@+id/action_oyunlarZit_to_zitOyunFragment"
+            app:destination="@id/zıtOyunFragment" />
+        <action
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            android:id="@+id/action_oyunlarZit_to_hafizaKartiZit"
+            app:destination="@id/hafızaKartiZit" />
+    </fragment>
+    <fragment
+        android:id="@+id/sayıOyunFragment"
+        android:name="com.kavramatik.kavramatik.view.SayıOyunFragment"
+        android:label="Eşleme"
+        tools:layout="@layout/fragment_oyun_sayi"/>
+    <fragment
+        android:id="@+id/renkOyunFragment"
+        android:name="com.kavramatik.kavramatik.view.RenkOyunFragment"
+        android:label="Eşleme"
+        tools:layout="@layout/fragment_oyun_renk" />
+    <fragment
+        android:id="@+id/şekilOyunFragment"
+        android:name="com.kavramatik.kavramatik.view.ŞekilOyunFragment"
+        android:label="Eşleme"
+        tools:layout="@layout/fragment_oyun_sekil" />
+    <fragment
+        android:id="@+id/yönOyunFragment"
+        android:name="com.kavramatik.kavramatik.view.YönOyunFragment"
+        android:label="Eşleme"
+        tools:layout="@layout/fragment_oyun_yon" />
+    <fragment
+        android:id="@+id/boyutOyunFragment"
+        android:name="com.kavramatik.kavramatik.view.BoyutOyunFragment"
+        android:label="Eşleme"
+        tools:layout="@layout/fragment_oyun_boyut" />
+    <fragment
+        android:id="@+id/miktarOyunFragment"
+        android:name="com.kavramatik.kavramatik.view.MiktarOyunFragment"
+        android:label="Eşleme"
+        tools:layout="@layout/fragment_oyun_miktar" />
+    <fragment
+        android:id="@+id/duyuOyunFragment"
+        android:name="com.kavramatik.kavramatik.view.DuyuOyunFragment"
+        android:label="Eşleme"
+        tools:layout="@layout/fragment_oyun_duyu" />
+    <fragment
+        android:id="@+id/zıtOyunFragment"
+        android:name="com.kavramatik.kavramatik.view.ZıtOyunFragment"
+        android:label="Eşleme"
+        tools:layout="@layout/fragment_oyun_zit" />
+    <fragment
+        android:id="@+id/duyguOyunFragment"
+        android:name="com.kavramatik.kavramatik.view.DuyguOyunFragment"
+        android:label="Eşleme"
+        tools:layout="@layout/fragment_oyun_duygu" />
+    <fragment
+        android:id="@+id/hafızaKartiRenk"
+        android:name="com.kavramatik.kavramatik.view.HafizaKartiRenk"
+        android:label="Hafıza Kartları"
+        tools:layout="@layout/hafiza_karti_renk" />
+    <fragment
+        android:id="@+id/hafızaKartiSayi"
+        android:name="com.kavramatik.kavramatik.view.HafizaKartiSayi"
+        android:label="Hafıza Kartları"
+        tools:layout="@layout/hafiza_karti_sayi" />
+    <fragment
+        android:id="@+id/hafızaKartiSekil"
+        android:name="com.kavramatik.kavramatik.view.HafizaKartiSekil"
+        android:label="Hafıza Kartları"
+        tools:layout="@layout/hafiza_karti_sekil" />
+    <fragment
+        android:id="@+id/hafızaKartiYon"
+        android:name="com.kavramatik.kavramatik.view.HafizaKartiYon"
+        android:label="Hafıza Kartları"
+        tools:layout="@layout/hafiza_karti_yon" />
+    <fragment
+        android:id="@+id/hafızaKartiBoyut"
+        android:name="com.kavramatik.kavramatik.view.HafizaKartiBoyut"
+        android:label="Hafıza Kartları"
+        tools:layout="@layout/hafiza_karti_boyut" />
+    <fragment
+        android:id="@+id/hafızaKartiMiktar"
+        android:name="com.kavramatik.kavramatik.view.HafizaKartiMiktar"
+        android:label="Hafıza Kartları"
+        tools:layout="@layout/hafiza_karti_miktar" />
+    <fragment
+        android:id="@+id/hafızaKartiDuyu"
+        android:name="com.kavramatik.kavramatik.view.HafizaKartiDuyu"
+        android:label="Hafıza Kartları"
+        tools:layout="@layout/hafiza_karti_duyu" />
+    <fragment
+        android:id="@+id/hafızaKartiZit"
+        android:name="com.kavramatik.kavramatik.view.HafizaKartiZıt"
+        android:label="Hafıza Kartları"
+        tools:layout="@layout/hafiza_karti_zit" />
+    <fragment
+        android:id="@+id/hafızaKartiDuygu"
+        android:name="com.kavramatik.kavramatik.view.HafizaKartiDuygu"
+        android:label="Hafıza Kartları"
+        tools:layout="@layout/hafiza_karti_duygu" />
+    <fragment
+        android:id="@+id/dimensionFragment"
+        android:name="com.kavramatik.kavramatik.view.education.DimensionFragment"
+        android:label="@string/dimensions"
+        tools:layout="@layout/fragment_dimension" />
+
+    <fragment
+        android:id="@+id/colorFragment"
+        android:name="com.kavramatik.kavramatik.view.education.ColorFragment"
+        android:label="@string/colors"
+        tools:layout="@layout/fragment_color" >
+        <action
+            android:id="@+id/action_colorFragment_to_colorMatchFragment"
+            app:destination="@id/colorMatchFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/shapeFragment"
+        android:name="com.kavramatik.kavramatik.view.education.ShapeFragment"
+        android:label="@string/shapes"
+        tools:layout="@layout/fragment_shape" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.kavramatik.kavramatik.view.user.ProfileFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            android:id="@+id/action_profileFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            android:id="@+id/action_profileFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_choiceFragment"
+            app:destination="@id/choiceFragment"
+            app:popUpTo="@id/choiceFragment"
+            app:popUpToInclusive="true" />
+        <action
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            android:id="@+id/action_profileFragment_to_mainSettings"
+            app:destination="@id/mainSettings" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.kavramatik.kavramatik.view.user.LoginFragment"
+        android:label="@string/login_page"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_choiceFragment"
+            app:destination="@id/choiceFragment"
+            app:popUpTo="@id/choiceFragment"
+            app:popUpToInclusive="true" />
+        <action
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            android:id="@+id/action_loginFragment_to_sendMailFragment"
+            app:destination="@id/sendMailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.kavramatik.kavramatik.view.user.RegisterFragment"
+        android:label="@string/register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_choiceFragment"
+            app:destination="@id/choiceFragment"
+            app:popUpTo="@id/choiceFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/sendMailFragment"
+        android:name="com.kavramatik.kavramatik.view.user.SendMailFragment"
+        android:label="@string/send_mail"
+        tools:layout="@layout/fragment_send_mail" >
+        <action
+            android:id="@+id/action_sendMailFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/directionFragment"
+        android:name="com.kavramatik.kavramatik.view.education.DirectionFragment"
+        android:label="@string/directions"
+        tools:layout="@layout/fragment_direction" />
+    <fragment
+        android:id="@+id/numberFragment"
+        android:name="com.kavramatik.kavramatik.view.education.NumberFragment"
+        android:label="@string/numbers"
+        tools:layout="@layout/fragment_number" />
+    <fragment
+        android:id="@+id/emotionFragment"
+        android:name="com.kavramatik.kavramatik.view.education.EmotionFragment"
+        android:label="@string/emotions"
+        tools:layout="@layout/fragment_emotion" />
+    <fragment
+        android:id="@+id/quantityFragment"
+        android:name="com.kavramatik.kavramatik.view.education.QuantityFragment"
+        android:label="@string/quantities"
+        tools:layout="@layout/fragment_quantity" />
+    <fragment
+        android:id="@+id/senseFragment"
+        android:name="com.kavramatik.kavramatik.view.education.SenseFragment"
+        android:label="@string/senses"
+        tools:layout="@layout/fragment_sense" />
+    <fragment
+        android:id="@+id/oppositesFragment"
+        android:name="com.kavramatik.kavramatik.view.education.OppositesFragment"
+        android:label="@string/opposites"
+        tools:layout="@layout/fragment_opposites" />
+    <fragment
+        android:id="@+id/mainSettings"
+        android:name="com.kavramatik.kavramatik.view.setting.MainSettings"
+        android:label="@string/settings"
+        tools:layout="@layout/fragment_main_settings" />
+    <fragment
+        android:id="@+id/speechListFragment"
+        android:name="com.kavramatik.kavramatik.view.education.SpeechListFragment"
+        android:label="@string/speech"
+        tools:layout="@layout/fragment_speech_list" >
+        <action
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            android:id="@+id/action_speechListFragment_to_speechFragment"
+            app:destination="@id/speechFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/speechFragment"
+        android:name="com.kavramatik.kavramatik.view.education.SpeechFragment"
+        android:label="@string/speak"
+        tools:layout="@layout/fragment_speech" >
+        <argument
+            android:name="model"
+            app:argType="com.kavramatik.kavramatik.model.STTPassModel" />
+        <action
+            android:id="@+id/action_speechFragment_to_speechListFragment"
+            app:destination="@id/speechListFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popUpTo="@id/speechFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/colorMatchFragment"
+        android:name="com.kavramatik.kavramatik.view.education.ColorMatchFragment"
+        android:label="@string/match_colors"
+        tools:layout="@layout/fragment_color_match" >
+        <action
+            android:id="@+id/action_colorMatchFragment_to_colorFragment"
+            app:destination="@id/colorFragment"
+            app:popUpTo="@id/colorFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

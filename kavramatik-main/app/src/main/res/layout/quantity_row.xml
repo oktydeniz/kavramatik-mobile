@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="quantity"
+            type="com.kavramatik.kavramatik.model.QuantityModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/quantityImage"
+                android:layout_width="@dimen/size_of_images"
+                android:layout_height="@dimen/size_of_images"
+                android:layout_marginTop="8dp"
+                android:contentDescription="@{quantity.quantityOneText}"
+                android:focusable="true"
+                app:imageUrl="@{quantity.quantityOneImage}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <ImageView
+                android:id="@+id/quantityImageTwo"
+                android:layout_width="@dimen/size_of_images"
+                android:layout_height="@dimen/size_of_images"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="32dp"
+                android:contentDescription="@{quantity.quantityTwoText}"
+                app:imageUrl="@{quantity.quantityTwoImage}"
+                app:layout_constraintBottom_toTopOf="@+id/textView15"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.501"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/quantityImage"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                android:text="@{quantity.quantityOneText}"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toTopOf="@+id/quantityImageTwo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/quantityImage" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@{quantity.quantityTwoText}"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/quantityImageTwo" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+</layout>
+

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_register_color"
+    android:orientation="vertical"
+    tools:context=".view.user.RegisterFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_background_image"
+            android:src="@drawable/background_sm" />
+
+        <EditText
+            android:id="@+id/loginUserNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_margin_size"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/login_margin_size"
+            android:layout_marginTop="@dimen/text_view_margin_top"
+            android:layout_marginEnd="@dimen/login_margin_size"
+            android:layout_marginBottom="@dimen/login_margin_top_size"
+            android:autofillHints="@string/app_name"
+            android:backgroundTint="@color/text_color"
+            android:hint="@string/user_name_register"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/text_color" />
+
+        <EditText
+            android:id="@+id/registerEmailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_margin_size"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/login_margin_size"
+            android:layout_marginTop="@dimen/text_view_margin_top"
+            android:layout_marginEnd="@dimen/login_margin_size"
+            android:layout_marginBottom="@dimen/login_margin_top_size"
+            android:autofillHints="@string/app_name"
+            android:backgroundTint="@color/text_color"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/text_color" />
+
+        <EditText
+            android:id="@+id/registerPasswordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_margin_size"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/login_margin_size"
+            android:layout_marginTop="@dimen/text_view_margin_top"
+            android:layout_marginEnd="@dimen/login_margin_size"
+            android:layout_marginBottom="@dimen/login_margin_top_size"
+            android:autofillHints="@string/app_name"
+            android:backgroundTint="@color/text_color"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/text_color" />
+
+        <EditText
+            android:id="@+id/registerPasswordValidateEditText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_margin_size"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/login_margin_size"
+            android:layout_marginTop="@dimen/text_view_margin_top"
+            android:layout_marginEnd="@dimen/login_margin_size"
+            android:layout_marginBottom="@dimen/login_margin_top_size"
+            android:autofillHints="@string/app_name"
+            android:backgroundTint="@color/text_color"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/text_color" />
+
+        <TextView
+            android:id="@+id/goToPrivacyAndPolicy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/login_margin_top_size"
+            android:layout_marginEnd="@dimen/login_margin_top_size"
+            android:text="@string/privacy_policy"
+            android:textAlignment="center"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/education_screen_text_size_sm" />
+
+        <Button
+            android:id="@+id/singUpButton"
+            android:layout_width="@dimen/login_button_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/login_margin_top_size"
+            android:layout_marginBottom="100dp"
+            android:background="@drawable/app_button"
+            android:text="@string/sing_up"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:backgroundTint="@null" />
+
+    </LinearLayout>
+
+
+</ScrollView>

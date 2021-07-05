@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Kavramatik</string>
+    <string name="game_screen">Oyun Ekranı</string>
+    <string name="education_screen">Eğitim Ekranı</string>
+    <string name="colors">Renkler</string>
+    <string name="dimensions">Boyutlar</string>
+    <string name="shapes">Şekiller</string>
+    <string name="quantities">Miktarlar</string>
+    <string name="directions">Konumlar</string>
+    <string name="numbers">Rakamlar</string>
+    <string name="senses">Duyular</string>
+    <string name="emotions">Duygular</string>
+    <string name="opposites">Karşılaştırmalar</string>
+    <string name="settings">Ayarlar</string>
+    <string name="hello_blank_fragment">Selam</string>
+    <string name="language_not_supported">Yerel Dil Deskteklenmiyor !</string>
+    <string name="user_options">Kullanıcı İşlemleri</string>
+    <string name="not_ready_yet">Yazım Aşamasındadır !</string>
+
+    <string name="opening_dialog_text">Uygulama içerisinde sesli geri dönüşü olan resimler içerir.Bu seslendirmelerin verimli çalışabilmesi için lütfen Google TTS uygulamasının yüklü ve güncel olduğunu kontrol ediniz.Eğer farklı bir ses motoru kullanıyorsanız lütfen türkçe dil desteği eklentisinin seçili olduğundan emin olun !  </string>
+    <string name="continue_text">Google Play\'e Git</string>
+    <string name="information">Bilgilendirme</string>
+    <string name="okay">Tamam</string>
+    <string name="cancel">İptal</string>
+
+    <string name="email">E-posta</string>
+    <string name="password">Şifre</string>
+    <string name="sing_up">Kayıt Ol</string>
+    <string name="sing_in">Giriş Yap</string>
+    <string name="forgot_password">Şifremi Unuttum</string>
+    <string name="or">ya da</string>
+    <string name="check_again">Bu Alanı Kontrol Edin</string>
+    <string name="user_name">Kullanıcı Adı : </string>
+    <string name="user_name_register">Kullanıcı Adı </string>
+    <string name="user_e_mail">Kullanıcı E-posta: </string>
+    <string name="user_score">Kullanıcı Skor : </string>
+    <string name="something_went_wrong">Bir Şeyler Ters Gitti</string>
+    <string name="open_google_tts_on_play_store">Google TTS\'i Play Store\'da aç</string>
+    <string name="rate_us">Bizi Değerlendirin</string>
+    <string name="password_length">Şifre 6 Karakterden Uzun Olmalıdır</string>
+    <string name="app_version">Versiyon : </string>
+    <string name="privacy_policy">Bir hesap oluşturarak, <u>Kullanım Koşulları</u> ve <u>Gizlilik Politikasını</u> kabul etmiş olursunuz.</string>
+    <string name="password_not_match">Şifreler Eşleşmiyor </string>
+    <string name="welcome_messages">Hoş Geldiniz %1$s !</string>
+    <string name="loading">Yükleniyor…</string>
+    <string name="send">Gönder</string>
+    <string name="save">Kaydet</string>
+    <string name="verification_code">Doğrulama Kodu</string>
+    <string name="enter_email_to_send">Bize kayıt olmak için kullandığınız e-posta adresini girmeniz yeterlidir, size bir sıfırlama bağlantısı göndereceğiz!</string>
+    <string name="sing_out">Çıkış Yap</string>
+    <string name="first_sing_in">Önce Giriş Yapınız</string>
+    <string name="update">Yenile</string>
+    <string name="next">İleri</string>
+    <string name="back">Geri</string>
+    <string name="license_text_trans"><![CDATA[<a href=\'https://pngtree.com/so/boy-clipart\'>boy clipart png from pngtree.com</a>]]></string>
+    <string name="license_text_assistant"><![CDATA[<a href=\'https://pngtree.com/so/character\'>character png from pngtree.com</a></a>]]></string>
+    <string name="close">close</string>
+    <string name="check_menu_tts">Bir şey düzgün çalışmıyor hemen kontrol edelim</string>
+    <string name="no_tts_engine">Yüklü TTS motoru bulunamadı. Hemen Yükleyelim </string>
+    <string name="open_tts_engine">Ayarlara Gidin</string>
+    <string name="open_tts_settings">TTS Motorlarına Gidin</string>
+    <string name="voice_settings">Seslendirme Ayarları</string>
+    <string name="pitch">Perde</string>
+    <string name="speech_speed">Konuşma Hızı</string>
+    <string name="the_new_values_will_be_pronounced_like_this">Yeni seslendirme bu şekilde olacaktır.</string>
+    <string name="speak">Konuştur</string>
+    <string name="open_tts_languages">TTS Motorunun Dillerini Aç</string>
+    <string name="speech">Konuşma Alıştırmaları</string>
+    <string name="stt_listener"> %1$s Dediniz ! </string>
+    <string name="start_listen">Başla</string>
+    <string name="education_assistant">Her alana tıkladıktan sonra size tıklanan resmi seslendireceğiz.Hadi Deniyelim ! </string>
+    <string name="stt_question">Butona dokunduktan sonra aşağıdaki resmin adını söyleyiniz !</string>
+    <string name="permission_tex">İstediğin kategoriyi seçtikten sonra mikrofonu kullanmak için gelen ekrandan izin ver yazan yere basınız</string>
+    <string name="start_speaking">Seslendirmeye Başla</string>
+    <string name="stt_app_not_install">Ses Tanıma işlemini Yapacak Uygulama Hazır Değil</string>
+    <string name="time">Süre :</string>
+    <string name="congratulations">Bölüm Bitti ! </string>
+    <string name="main_menu">Ana Menüye Dön</string>
+    <string name="options">Seçenekler</string>
+    <string name="register">Kayıt Ol</string>
+    <string name="profile">Profilim</string>
+    <string name="login_page">Giriş Yap</string>
+    <string name="send_mail">E-posta Gönder</string>
+    <string name="match_assistant">Her objeyi kendi rengi ile eşleştirin </string>
+    <string name="match_colors">Renkleri Eşleştir</string>
+
+</resources>

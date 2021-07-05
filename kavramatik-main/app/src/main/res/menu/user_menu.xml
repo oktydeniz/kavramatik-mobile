@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/userSettings"
+        android:contentDescription="@string/user_options"
+        android:icon="@drawable/settings_applications"
+        android:title="@string/user_options"
+        app:showAsAction="ifRoom" />
+</menu>

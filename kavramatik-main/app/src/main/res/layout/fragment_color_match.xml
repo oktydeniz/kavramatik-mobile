@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="match"
+            type="com.kavramatik.kavramatik.model.ColorCompModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mainTwoTry"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/blur_bg_pzl"
+        tools:context=".view.education.ColorMatchFragment">
+
+        <ProgressBar
+            android:id="@+id/machColorsProgress"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/errorTextViewColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/something_went_wrong"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RelativeLayout
+            android:id="@+id/mainLinearMatch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/list_height_match_size"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <ImageView
+                android:id="@+id/mainColor"
+                android:layout_width="@dimen/size_of_images"
+                android:layout_height="@dimen/size_of_images"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="@dimen/match_size"
+                android:layout_marginEnd="@dimen/match_size"
+                android:contentDescription="@{match.colorName}"
+                tools:src="@tools:sample/avatars" />
+
+            <ImageView
+                android:id="@+id/imageOneMatch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mainColor"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="24dp"
+                android:contentDescription="@{match.colorName}"
+                tools:src="@tools:sample/avatars" />
+
+            <ImageView
+                android:id="@+id/imageTwoMatch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mainColor"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="32dp"
+                android:contentDescription="@{match.colorName}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@tools:sample/avatars" />
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

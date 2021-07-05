@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_register_color"
+    android:orientation="vertical"
+    tools:context=".view.user.SendMailFragment">
+
+    <LinearLayout
+        android:id="@+id/sendMailArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/login_margin_size"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/main_linear_layout_margin"
+            android:layout_marginEnd="@dimen/main_linear_layout_margin"
+            android:text="@string/enter_email_to_send"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/education_screen_text_size" />
+
+        <EditText
+            android:id="@+id/mailEmailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_margin_size"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/login_margin_top_size"
+            android:layout_marginTop="@dimen/text_view_margin_top"
+            android:layout_marginEnd="@dimen/login_margin_top_size"
+            android:autofillHints="@string/app_name"
+            android:backgroundTint="@color/text_color"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/text_color" />
+
+        <Button
+            android:id="@+id/sendMailButton"
+            android:layout_width="@dimen/login_button_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/login_margin_top_size"
+            android:background="@drawable/app_button"
+            android:text="@string/send"
+            android:textAllCaps="false"
+            app:backgroundTint="@null" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/openForNewPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/login_margin_size"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/verificationCodeEditText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_margin_size"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/login_margin_size"
+            android:layout_marginTop="@dimen/login_margin_top_size"
+            android:layout_marginEnd="@dimen/login_margin_size"
+            android:autofillHints="@string/app_name"
+            android:backgroundTint="@color/text_color"
+            android:hint="@string/verification_code"
+            android:inputType="text"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/text_color" />
+
+        <EditText
+            android:id="@+id/newPassword"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_margin_size"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/login_margin_size"
+            android:layout_marginTop="@dimen/login_margin_top_size"
+            android:layout_marginEnd="@dimen/login_margin_size"
+            android:autofillHints="@string/app_name"
+            android:backgroundTint="@color/text_color"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/text_color" />
+
+        <EditText
+            android:id="@+id/newPasswordValidation"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_margin_size"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/login_margin_size"
+            android:layout_marginTop="@dimen/login_margin_top_size"
+            android:layout_marginEnd="@dimen/login_margin_size"
+            android:autofillHints="@string/app_name"
+            android:backgroundTint="@color/text_color"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/text_color" />
+
+        <Button
+            android:id="@+id/chancePassword"
+            android:layout_width="@dimen/login_button_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/login_margin_top_size"
+            android:background="@drawable/app_button"
+            android:text="@string/save"
+            android:textAllCaps="false"
+            app:backgroundTint="@null" />
+    </LinearLayout>
+
+</LinearLayout>

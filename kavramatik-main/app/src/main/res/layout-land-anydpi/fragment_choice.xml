@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blur_bg_pzl"
+    android:orientation="horizontal"
+    tools:context=".view.ChoiceFragment">
+
+    <ImageView
+        android:id="@+id/educationImageView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/choice_screen_margin"
+        android:layout_weight="@dimen/choice_screen_weight"
+        android:clickable="true"
+        android:contentDescription="@string/education_screen"
+        android:focusable="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/education" />
+
+    <ImageView
+        android:id="@+id/gameImageView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/choice_screen_margin"
+        android:layout_weight="@dimen/choice_screen_weight"
+        android:clickable="true"
+        android:contentDescription="@string/game_screen"
+        android:focusable="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/game" />
+</LinearLayout>

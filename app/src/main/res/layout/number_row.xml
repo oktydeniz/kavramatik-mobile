@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="number"
+            type="com.kavramatik.kavramatik.model.NumberModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/numberImage"
+            android:layout_width="@dimen/size_of_images"
+            android:layout_height="@dimen/size_of_images"
+            android:clickable="true"
+            android:contentDescription="@{number.numberName}"
+            android:focusable="true"
+            app:imageUrl="@{number.numberImage}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@{number.numberName}"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/numberImage"
+            app:layout_constraintStart_toStartOf="@+id/numberImage"
+            app:layout_constraintTop_toBottomOf="@+id/numberImage" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

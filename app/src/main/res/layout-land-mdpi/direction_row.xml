@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="direction"
+            type="com.kavramatik.kavramatik.model.DirectionModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/directionImage"
+                android:layout_width="@dimen/size_of_images"
+                android:layout_height="@dimen/size_of_images"
+                android:layout_marginStart="32dp"
+                android:contentDescription="@{direction.directionText}"
+                android:focusable="true"
+                app:imageUrl="@{direction.directionImage}"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <ImageView
+                android:id="@+id/directionImageTwo"
+                android:layout_width="@dimen/size_of_images"
+                android:layout_height="@dimen/size_of_images"
+                android:layout_marginEnd="32dp"
+                android:contentDescription="@{direction.directionTwoText}"
+                app:imageUrl="@{direction.directionTwo}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{direction.directionText}"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/directionImage"
+                app:layout_constraintStart_toStartOf="@+id/directionImage"
+                app:layout_constraintTop_toBottomOf="@+id/directionImage" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{direction.directionTwoText}"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/directionImageTwo"
+                app:layout_constraintStart_toStartOf="@+id/directionImageTwo"
+                app:layout_constraintTop_toBottomOf="@+id/directionImageTwo" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+</layout>

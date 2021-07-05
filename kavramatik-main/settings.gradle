@@ -1,0 +1,2 @@
+rootProject.name = "Kavramatik"
+include ':app'

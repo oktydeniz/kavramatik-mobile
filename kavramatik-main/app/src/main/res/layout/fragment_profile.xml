@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_register_color"
+    android:orientation="vertical"
+    tools:context=".view.user.ProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/login_margin_size"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_background_image"
+            android:layout_gravity="center"
+            android:src="@drawable/background_sm" />
+
+        <TextView
+            android:id="@+id/goToLoginFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/text_view_margin_top"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/sing_in"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/login_app_name_size" />
+
+        <TextView
+            android:id="@+id/singOutTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/text_view_margin_top"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/sing_out"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/login_app_name_size"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/login_margin_top_size"
+            android:layout_marginTop="@dimen/login_margin_top_size"
+            android:layout_marginRight="@dimen/login_margin_top_size"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="@dimen/profile_weight_one"
+                android:text="@string/user_name"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/education_screen_text_size_sm" />
+
+            <TextView
+                android:id="@+id/profileUserName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="@dimen/profile_weight_two"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/education_screen_text_size_sm" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/login_margin_top_size"
+            android:layout_marginTop="@dimen/login_margin_top_size"
+            android:layout_marginRight="@dimen/login_margin_top_size"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="@dimen/profile_weight_one"
+                android:text="@string/user_e_mail"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/education_screen_text_size_sm" />
+
+            <TextView
+                android:id="@+id/profileUserEmail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="@dimen/profile_weight_two"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/education_screen_text_size_sm" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/login_margin_top_size"
+            android:layout_marginTop="@dimen/login_margin_top_size"
+            android:layout_marginRight="@dimen/login_margin_top_size"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="@dimen/profile_weight_one"
+                android:text="@string/user_score"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/education_screen_text_size_sm" />
+
+            <TextView
+                android:id="@+id/profileUserScore"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="@dimen/profile_weight_two"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/education_screen_text_size_sm" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/settingInButton"
+            android:layout_width="@dimen/login_button_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="100dp"
+            android:background="@drawable/app_button"
+            android:text="@string/settings"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:backgroundTint="@null" />
+    </LinearLayout>
+</ScrollView>
